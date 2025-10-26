@@ -18,25 +18,26 @@
   <section>
     <h2>Professional Summary</h2>
     <p>
-      Bilingual Data Analyst with 10+ years of experience in telecommunications data analysis, cost optimization, and KPI performance management. 
+      Data Analyst with 10+ years of experience in telecommunications data analysis, cost optimization, and KPI performance management. 
       Completed Computer Programming Diploma at Algonquin College (2025) and postgraduate studies in Data Analytics. 
       Strong in handling large datasets, building analytical models, and generating actionable insights. Skilled in Excel, SQL, Python, and BI tools. 
-      Analytical thinker, detail-oriented, adaptable, and bilingual in Spanish/English.
+      Analytical thinker, detail-oriented, and adaptable.
     </p>
   </section>
 
   <!-- Core Skills -->
   <section>
     <h2>Core Skills</h2>
-    <ul>
-      <li>Mathematical & Statistical Analysis</li>
-      <li>Data Analysis & Reporting (Cost analysis, KPI dashboards, financial modeling)</li>
-      <li>Tools & Technologies: Excel (advanced), SQL, Python (Pandas, NumPy, Matplotlib), Power BI, Tableau</li>
-      <li>Databases: MySQL, MongoDB, Oracle</li>
-      <li>Programming: Python, Java, R (basic), Git, Jupyter Notebooks</li>
-      <li>Business Acumen: Data-driven decision-making, cost optimization strategies</li>
-      <li>Soft Skills: Analytical thinking, adaptability, teamwork, bilingual communication</li>
-    </ul>
+    <div class="skills">
+      <span>Mathematical & Statistical Analysis</span>
+      <span>Data Analysis & Reporting</span>
+      <span>Excel, SQL, Python</span>
+      <span>Power BI, Tableau</span>
+      <span>Databases: MySQL, MongoDB, Oracle</span>
+      <span>Programming: Python, Java, R</span>
+      <span>Business Acumen</span>
+      <span>Analytical Thinking & Problem-Solving</span>
+    </div>
   </section>
 
   <!-- Education -->
@@ -50,7 +51,7 @@
     </ul>
   </section>
 
-  <!-- Experience -->
+  <!-- Professional Experience -->
   <section>
     <h2>Professional Experience</h2>
     <div class="accordion">
@@ -93,7 +94,7 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects & Portfolio -->
   <section>
     <h2>Projects & Portfolio</h2>
     <div class="accordion">
@@ -141,10 +142,21 @@
   <!-- Contact -->
   <section>
     <h2>Contact</h2>
-    <p>📧 <a href="mailto:dipaogasca1@gmail.com">dipaogasca1@gmail.com</a> | 📱 226-346-8617</p>
+    <p>📧 <a href="mailto:dipaogasca1@gmail.com" class="btn">dipaogasca1@gmail.com</a> | 📱 226-346-8617</p>
+    <p>🌐 <a href="https://github.com/dipagasca1" class="btn" target="_blank">GitHub</a></p>
   </section>
 
-  <script src="js/script.js"></script>
+  <script>
+    // Accordion functionality
+    const accordions = document.querySelectorAll('.accordion-btn');
+    accordions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const panel = btn.nextElementSibling;
+        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
+
 </body>
 </html>
-
